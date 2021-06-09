@@ -54,7 +54,7 @@ export async function loadSchema(
     throw new DetailedError(
       'Failed to load schema',
       `
-        Failed to load schema from ${Object.keys(schemaPointers).join(',')}:
+        Failed to load schema from ${Object.keys(schemaPointers).join(', ')}:
 
         ${e.message || e}
         ${e.stack || ''}
